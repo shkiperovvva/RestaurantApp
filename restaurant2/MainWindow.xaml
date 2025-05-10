@@ -1,0 +1,94 @@
+﻿<Window x:Class="restaurant2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:restaurant2"
+        mc:Ignorable="d"
+        Title="Главное окно клиента" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="59"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="МЕНЮ РЕСТОРАНА"
+                   FontSize="28"
+                   FontWeight="Heavy"
+                   HorizontalAlignment="Left"
+                   Margin="10,10,0,10" Grid.Row="0" Grid.Column="0" Width="280"/>
+
+        <Button Content="ЛИЧНЫЙ КАБИНЕТ"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,10"
+                Width="180"
+                Height="40"
+                Click="PersonalAccountButton_Click"
+                Grid.Row="0" Grid.Column="1"
+                Style="{StaticResource RoundedButtonStyle}"/>
+
+        <DataGrid x:Name="MenuDataGrid"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  Grid.Row="2" Grid.Column="0"
+                  Margin="10,0,10,10"
+                  RowHeight="30">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id_dish}" Width="Auto"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding name_dish}" Width="*"/>
+                <DataGridTextColumn Header="Описание" Binding="{Binding about_dish}" Width="*"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding price}" Width="Auto"/>
+                <DataGridTextColumn Header="Граммовка и категория" Binding="{Binding category_gramme}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,10,10,10">
+            <Button Content="ДОБАВИТЬ В КОРЗИНУ"
+                    Width="180"
+                    Height="40"
+                    Margin="0,0,0,10"
+                    Click="AddToCartButton_Click"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+            <Button Content="ПОСМОТРЕТЬ КОРЗИНУ"
+                    Width="180"
+                    Height="40"
+                    Margin="0,0,0,10"
+                    Click="ViewCartButton_Click"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+            <Button Content="МОИ ЗАКАЗЫ"
+                    Width="180"
+                    Height="40"
+                    Click="ViewMyOrdersButton_Click"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</Window>

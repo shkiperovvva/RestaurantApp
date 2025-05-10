@@ -1,0 +1,139 @@
+﻿<Window x:Class="restaurant2.ClientOrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:restaurant2"
+        mc:Ignorable="d"
+        Title="Мои заказы" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Border" x:Key="StatusBorderStyle">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding status_order}" Value="Начат">
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding status_order}" Value="Готов">
+                    <Setter Property="BorderBrush" Value="Green"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding status_order}" Value="Оформлен">
+                    <Setter Property="BorderBrush" Value="Yellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="НАЗАД" 
+                HorizontalAlignment="Left" 
+                Margin="10" 
+                Width="80" 
+                Click="BackButton_Click" 
+                Grid.Row="0"
+                Style="{StaticResource RoundedButtonStyle}"/>
+
+        <TextBlock Text="МОИ ЗАКАЗЫ" 
+                   FontSize="28" 
+                   FontWeight="Heavy" 
+                   HorizontalAlignment="Center" 
+                   Margin="10" 
+                   Grid.Row="0"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,10,0,0">
+            <ItemsControl x:Name="OrdersItemsControl" 
+                  HorizontalAlignment="Center"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="3" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Margin="0,-8"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="{Binding StatusColor}" 
+                        BorderThickness="1.5" 
+                        Margin="8"
+                        Width="240"
+                        Height="280" 
+                        Background="White"
+                        Padding="0">
+                            <Grid Margin="8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="{Binding id_order, StringFormat='ЗАКАЗ №{0}'}" 
+                                   FontWeight="Bold" HorizontalAlignment="Center"
+                                   FontSize="16" Grid.Row="0"/>
+
+                                <TextBlock Text="ПОЗИЦИИ ЗАКАЗА" 
+                                   FontSize="12" HorizontalAlignment="Center" 
+                                   Margin="0,0,0,10"
+                                   FontWeight="Light" Grid.Row="1"/>
+
+                                <ItemsControl ItemsSource="{Binding Items}" Grid.Row="2" Margin="0,5">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Margin="0,2">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="{Binding name_dish}" Grid.Column="0"/>
+                                                <TextBlock Text="{Binding quantity}" Grid.Column="1" Margin="4,0"/>
+                                                <TextBlock Text="{Binding total_price}" Grid.Column="2"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+
+                                <StackPanel Margin="0,10,0,0" Grid.Row="3" VerticalAlignment="Bottom">
+                                    <TextBlock Text="{Binding status_order, StringFormat='СТАТУС: {0}'}" 
+                                       FontWeight="SemiBold"/>
+                                    <TextBlock Text="{Binding date_order, StringFormat='{}{0:dd.MM.yyyy HH:mm:ss}'}" 
+                                        FontSize="11"/>
+                                    <TextBlock Text="{Binding TotalOrderPrice, StringFormat='СУММА: {0}'}" 
+                                        FontWeight="Bold" Margin="0,5" FontSize="16"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

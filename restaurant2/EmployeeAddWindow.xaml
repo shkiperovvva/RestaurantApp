@@ -1,0 +1,50 @@
+﻿<Window x:Class="restaurant2.EmployeeAddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавление сотрудника" Height="398" Width="415"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="ДОБАВЛЕНИЕ НОВОГО СОТРУДНИКА" FontWeight="Heavy" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        <StackPanel Grid.Row="1" Margin="0,0,0,10">
+            <TextBlock Text="ИМЯ"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10" Height="30"/>
+            <TextBlock Text="ФАМИЛИЯ"/>
+            <TextBox x:Name="LastnameTextBox" Margin="0,0,0,10" Height="30"/>
+            <TextBlock Text="ЭЛ.ПОЧТА"/>
+            <TextBox x:Name="EmailTextBox" Margin="0,0,0,10" Height="30"/>
+            <TextBlock Text="ПАРОЛЬ"/>
+            <PasswordBox x:Name="PasswordBox" Margin="0,0,0,10" Height="30"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Content="ОТМЕНА" Width="100" Margin="0,0,10,0" Click="Cancel_Click" Style="{StaticResource RoundedButtonStyle}"/>
+            <Button Content="СОХРАНИТЬ" Width="245" Click="Save_Click" Style="{StaticResource RoundedButtonStyle}" Height="40"/>
+        </StackPanel>
+    </Grid>
+</Window>

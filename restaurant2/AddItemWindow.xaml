@@ -1,0 +1,71 @@
+﻿<Window x:Class="restaurant2.AddItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавление позиции в меню" Height="377" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!-- Остальная разметка -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="128"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="ДОБАВЛЕНИЕ НОВОЙ ПОЗИЦИИ" 
+                   FontSize="18" 
+                   FontWeight="Heavy"
+                   HorizontalAlignment="Left"
+                   Margin="47,10,0,30"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Width="306"/>
+
+        <Label Content="НАЗВАНИЕ БЛЮДА" Grid.Row="1" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox x:Name="NameTextBox" Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" VerticalContentAlignment="Center"/>
+
+        <Label Content="ОПИСАНИЕ" Grid.Row="2" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox x:Name="AboutTextBox" Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" VerticalContentAlignment="Center"/>
+
+        <Label Content="ЦЕНА (РУБ.)" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox x:Name="PriceTextBox" Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" VerticalContentAlignment="Center"/>
+
+        <Label Content="ГРАММОВКА" Grid.Row="4" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox x:Name="GrammeTextBox" Grid.Row="4" Grid.Column="1" Margin="5,5,5,5" VerticalContentAlignment="Center"/>
+
+        <Label Content="КАТЕГОРИЯ" Grid.Row="5" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox x:Name="CategoryTextBox" Grid.Row="5" Grid.Column="1" Margin="5,5,5,5" VerticalContentAlignment="Center"/>
+
+        <Button Content="СОХРАНИТЬ" Grid.Row="7" Grid.Column="1" Height="40" Margin="5,30,16,113" Click="SaveButton_Click" Style="{StaticResource RoundedButtonStyle}"/>
+        <Button Content="ОТМЕНА" Grid.Row="7" Grid.Column="0" Height="40" Margin="0,30,5,113" Click="CancelButton_Click" Style="{StaticResource RoundedButtonStyle}" HorizontalAlignment="Right" Width="107"/>
+    </Grid>
+</Window>

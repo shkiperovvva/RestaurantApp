@@ -1,0 +1,38 @@
+﻿<Window x:Class="restaurant2.ReportConfirmationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Отчет сгенерирован" Height="163" Width="300"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="20">
+        <TextBlock Text="ОТЧЕТ УСПЕШНО СГЕНЕРИРОВАН" FontSize="14" FontWeight="Heavy" TextAlignment="Center" Margin="0,0,0,0"/>
+        <TextBlock Text="В ФОРМАТЕ PDF" FontSize="10" FontWeight="Medium" TextAlignment="Center" Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="OK" Width="80" Margin="0,0,10,0" Click="OkButton_Click" FontSize="11"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+            <Button Content="ПОСМОТРЕТЬ ОТЧЕТ" Width="144" Click="ViewReportButton_Click" Height="30" FontSize="11"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

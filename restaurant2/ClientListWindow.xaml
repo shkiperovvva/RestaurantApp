@@ -1,0 +1,63 @@
+﻿<Window x:Class="restaurant2.ClientListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список клиентов" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="НАЗАД" 
+                HorizontalAlignment="Left" 
+                Margin="10" 
+                Width="80" 
+                Click="BackButton_Click" Grid.Row="0"
+                Style="{StaticResource RoundedButtonStyle}"/>
+
+        <TextBlock Text="СПИСОК КЛИЕНТОВ" 
+                   FontSize="28" 
+                   FontWeight="Heavy" 
+                   HorizontalAlignment="Center" 
+                   Margin="10" Grid.Row="0"/>
+
+        <DataGrid x:Name="ClientsDataGrid" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True" 
+                  Grid.Row="1"
+                  Margin="10,0,10,10"
+                  RowHeight="30">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id_client}" Width="Auto"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding name_client}" Width="*"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding lastname_client}" Width="*"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="*"/>
+                <!-- <DataGridTextColumn Header="Пароль" Binding="{Binding password_client}" Width="*"/>
+                <DataGridTextColumn Header="Роль" Binding="{Binding role}" Width="Auto"/> -->
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Application x:Class="restaurant2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:restaurant2"
+             StartupUri="Autorization.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

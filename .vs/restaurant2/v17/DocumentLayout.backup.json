@@ -1,0 +1,278 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shkip\\source\\repos\\restaurant2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E38A32A6-DAA9-4075-A986-9BD819A9A721}|Tests\\Tests.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38A32A6-DAA9-4075-A986-9BD819A9A721}|Tests\\Tests.csproj|solutionrelative:tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\editstatuswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\editstatuswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\editstatuswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\editstatuswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\orderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\orderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\employeeaddwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\employeeaddwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38A32A6-DAA9-4075-A986-9BD819A9A721}|Tests\\Tests.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\tests\\attributes\\wpftestmethodattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38A32A6-DAA9-4075-A986-9BD819A9A721}|Tests\\Tests.csproj|solutionrelative:tests\\attributes\\wpftestmethodattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38A32A6-DAA9-4075-A986-9BD819A9A721}|Tests\\Tests.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38A32A6-DAA9-4075-A986-9BD819A9A721}|Tests\\Tests.csproj|solutionrelative:tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\mainwindowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\mainwindowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\reportgenerationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\reportgenerationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|c:\\users\\shkip\\source\\repos\\restaurant2\\restaurant2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA47A8A-87BD-4941-A924-7AA25122920B}|restaurant2\\restaurant2.csproj|solutionrelative:restaurant2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditStatusWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\EditStatusWindow.xaml",
+              "RelativeDocumentMoniker": "restaurant2\\EditStatusWindow.xaml",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\EditStatusWindow.xaml",
+              "RelativeToolTip": "restaurant2\\EditStatusWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-08T14:49:18.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditStatusWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\EditStatusWindow.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\EditStatusWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\EditStatusWindow.xaml.cs",
+              "RelativeToolTip": "restaurant2\\EditStatusWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvygAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:45:24.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\OrderWindow.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\OrderWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\OrderWindow.xaml.cs",
+              "RelativeToolTip": "restaurant2\\OrderWindow.xaml.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:44:34.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WpfTestMethodAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\Tests\\Attributes\\WpfTestMethodAttribute.cs",
+              "RelativeDocumentMoniker": "Tests\\Attributes\\WpfTestMethodAttribute.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\Tests\\Attributes\\WpfTestMethodAttribute.cs",
+              "RelativeToolTip": "Tests\\Attributes\\WpfTestMethodAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:41:02.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\Tests\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "Tests\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\Tests\\MSTestSettings.cs",
+              "RelativeToolTip": "Tests\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T13:01:48.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeAddWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\EmployeeAddWindow.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\EmployeeAddWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\EmployeeAddWindow.xaml.cs",
+              "RelativeToolTip": "restaurant2\\EmployeeAddWindow.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAiwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:29:48.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\Tests\\Test1.cs",
+              "RelativeDocumentMoniker": "Tests\\Test1.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\Tests\\Test1.cs*",
+              "RelativeToolTip": "Tests\\Test1.cs*",
+              "ViewState": "AgIAACUBAAAAAAAAAAAAACsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T13:01:48.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Registration.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\Registration.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\Registration.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\Registration.xaml.cs",
+              "RelativeToolTip": "restaurant2\\Registration.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAADwvzUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T17:18:20.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "restaurant2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAowLUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:37:48.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Autorization.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\Autorization.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\Autorization.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\Autorization.xaml.cs",
+              "RelativeToolTip": "restaurant2\\Autorization.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:28:11.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Autorization.xaml",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\Autorization.xaml",
+              "RelativeDocumentMoniker": "restaurant2\\Autorization.xaml",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\Autorization.xaml",
+              "RelativeToolTip": "restaurant2\\Autorization.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-02T16:28:10.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReportGenerationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\ReportGenerationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\ReportGenerationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\ReportGenerationWindow.xaml.cs",
+              "RelativeToolTip": "restaurant2\\ReportGenerationWindow.xaml.cs",
+              "ViewState": "AgIAAF4BAAAAAAAAAAAuwHcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:55:24.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindowAdmin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\MainWindowAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "restaurant2\\MainWindowAdmin.xaml.cs",
+              "ToolTip": "C:\\Users\\shkip\\source\\repos\\restaurant2\\restaurant2\\MainWindowAdmin.xaml.cs",
+              "RelativeToolTip": "restaurant2\\MainWindowAdmin.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAIIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:47:37.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1883,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
